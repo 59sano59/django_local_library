@@ -135,9 +135,5 @@ CRISPY_TEMPLATE_PACK="bootstrap4"
 LOGIN_REDIRECT_URL = "/"
 LOGOUT_REDIRECT_URL = "/"
 
-import dj_database_url
-db_from_env = dj_database_url.config(conn_max=500)
-DATABASES['default'].update(db_from_env)
-
 STATIC_ROOT = BASE_DIR /'staticfiles'
 STATIC_URL= '/static/'
